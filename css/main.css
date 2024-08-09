@@ -1,0 +1,67 @@
+#intro_section{
+    height: 100vh;
+    background: url(../img/mian_bg.jpg) center/cover no-repeat;
+    position: relative;
+}
+#intro_section .cont{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+#intro_section .text_area{
+    width: 40%;
+}
+#intro_section .text_area .title{
+    font-size: 64px;
+    color: #fff;
+}
+#intro_section .text_area .title_para{
+    font-size: 34px;
+    color: #fff;
+    line-height: 1.6;
+}
+a#scroll_btn{
+    position: absolute;
+    width: 48px;
+    height: 70px;
+    border: 4px solid #fff;
+    border-radius: 24px ;
+    left: 50%;
+    bottom: 100px;
+    transform: translateX(-50%);
+}
+
+a#scroll_btn:before {
+    position: absolute;
+    content: "";
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 8px;
+    height: 14px;
+    width: 4px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    animation: move_down 1.5s infinite;
+  }
+  @keyframes move_down {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(8px);
+    }
+  }
+  a#scroll_btn:after {
+    position: absolute;
+    content: "Scroll down";
+    width: 90px;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+    left: 50%;
+    top: 80px;
+    transform: translateX(-50%);
+  }
