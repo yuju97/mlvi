@@ -11,15 +11,6 @@
 #intro_section .text_area{
     width: 40%;
 }
-#intro_section .text_area .title{
-    font-size: 64px;
-    color: #fff;
-}
-#intro_section .text_area .title_para{
-    font-size: 34px;
-    color: #fff;
-    line-height: 1.6;
-}
 a#scroll_btn{
     position: absolute;
     width: 48px;
@@ -43,25 +34,106 @@ a#scroll_btn:before {
     background-color: #ffffff;
     border-radius: 2px;
     animation: move_down 1.5s infinite;
+}
+@keyframes move_down {
+  0% {
+      transform: translateY(0px);
   }
-  @keyframes move_down {
-    0% {
-        transform: translateY(0px);
-    }
-    100% {
-      transform: translateY(8px);
-    }
+  100% {
+    transform: translateY(8px);
   }
-  a#scroll_btn:after {
-    position: absolute;
-    content: "Scroll down";
-    width: 90px;
-    display: block;
-    text-align: center;
-    font-size: 16px;
-    color: #ffffff;
-    font-weight: 600;
-    left: 50%;
-    top: 80px;
-    transform: translateX(-50%);
+}
+a#scroll_btn:after {
+  position: absolute;
+  content: "Scroll down";
+  width: 90px;
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 600;
+  left: 50%;
+  top: 80px;
+  transform: translateX(-50%);
+}
+#service_section{
+  background-color: #000;
+  height: 900px;
+}
+#service_section .cont{
+  display: flex;
+  align-items: center;
+  gap: 145px;
+  height: 100%;
+}
+#service_section .img_area{
+  height: 510px;
+}
+#service_section .img_area img{
+  height: 100%;
+}
+#product_section .cont{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#product_section .text_area{
+  width: 636px;
+}
+#product_section .small_title,
+#product_section .small_title_para{
+  text-align: center;
+}
+.product_list{
+  width: 100%;
+  display: flex;
+  gap: 12px;
+  margin: 32px 0 64px;
+}
+#product_section .btn{
+  margin: auto;
+}
+#customer_section{
+  background-color: #000;
+  height: 960px;
+  padding: 0;
+}
+#customer_section .cont{
+  display: flex;
+  gap: 120px;
+}
+#customer_section .img_area{
+  order: 1;
+}
+#customer_section .text_area{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+#started_section{
+  background: url(../img/started_bg.jpg) center/cover no-repeat;
+  height: 960px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 24px;
+}
+#started_section .text_area{
+  width: 528px;
+}
+#started_section .text_area .title_para{
+  font-size: 24px;
+}
+.main_class{
+  color: #fff;
+  font-size: 34px;
+  margin-bottom: 12px;
+}
+@media all and (max-width: 1280px){
+  #intro_section .text_area{
+    width: 100%;
   }
+}

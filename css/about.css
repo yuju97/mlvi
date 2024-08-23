@@ -1,0 +1,123 @@
+.about_section{
+    background-color: #262626;
+    height: 840px;
+    padding: 0;
+}
+.about_section .cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    height: 100%;
+}
+.about_section .text_area,
+.vision_section .text_area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 600px;
+    width: 528px;
+    gap: 32px;
+    font-weight: 700;
+}
+.about_section .img_area,
+.vision_section .img_area{
+    height: 600px;
+    width: 528px;
+    overflow: hidden;
+}
+.about_section img,
+.vision_section img{
+    width: auto;
+    height: 100%;
+}
+.vision_section .cont{
+    display: flex;
+    gap: 132px;
+}
+.mission_section{
+    background: url(../img/mission_bg.jpg) center/cover no-repeat;
+    text-align: center;
+}
+.mission_section .title{
+    margin-bottom: 48px;
+}
+.value_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 120px;
+}
+.value_top .small_title{
+    margin: 0;
+}
+.value_top hr{
+    width: 60px;
+    border-top: 1px solid #898989;
+}
+.value_top .section_para{
+    color: #898989;
+    font-size: 20px;
+    line-height: 1.6;
+    width: 744px;
+}
+.value_list{
+    display: flex;
+    gap: 12px;
+}
+.value_list li{
+    width: calc((100% - 24px) / 3);
+    text-align: center;
+}
+.value_list .value_head{
+    font-size: 24px;
+    color: #131313;
+    margin: 24px 0;
+}
+.value_list .value_detail{
+    line-height: 1.6;
+    color: #898989;
+    text-align: left;
+}
+.contact_intro_section{
+    position: relative;
+}
+.contact_intro_section .intro_bg{
+    width: 100%;
+    height: 553px;
+    background-color: #131313;
+    position: absolute;
+    top: 180px;
+    z-index: 1;
+}
+.contact_intro_section .cont{
+    position: relative;
+    z-index: 2;
+    height: 672px;
+    display: flex;
+    justify-content: space-between;
+}
+.contact_intro_section .img_area{
+    width: 636px;
+    height: 672px;
+    overflow: hidden;
+}
+.contact_intro_section .img_area img{
+    width: auto;
+    height: 100%;
+}
+.contact_intro_section .text_area{
+    width: 528px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+}
+.business_section .title{
+    text-align: center;
+    margin-bottom: 64px;
+}
+.business_section .swiper-pagination{
+    position: relative;
+    margin-top: 64px;
+}
