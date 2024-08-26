@@ -82,6 +82,7 @@ header .cont{
 }
 .sub_menu a{
     color: #fff;
+    display: block;
 }
 .sub_menu li:not(:last-child){
     margin-bottom: 24px;

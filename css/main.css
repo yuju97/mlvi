@@ -159,9 +159,13 @@ a#scroll_btn:after {
     height: 100%;
     padding-top: 100px;
   }
+  #service_section{
+    height: auto;
+  }
   #service_section .cont{
     display: grid;
-    height: 100%;
+    height: auto;
+    padding: 0;
   }
   #service_section .img_area{
     grid-column: 1 / 2;
