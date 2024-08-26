@@ -73,13 +73,11 @@
     </header>
     <section class="about_section">
         <div class="cont">
-            <div class="text_area">
                 <h3 class="title">
                     About Us
                 </h3>
                 <p class="title_para">
                     MLVi designs and manufactures top-quality zoom modules and encoders. We deliver innovative OEM solutions that exceed industry standards and meet the diverse needs of our clients.                </p>
-            </div>
             <div class="img_area">
                 <img src="./img/about_bg.jpg" alt="">
             </div>
@@ -103,7 +101,7 @@
         <div class="cont">
             <div class="text_area">
                 <h3 class="title">
-                    mission
+                    Mission
                 </h3>
                 <p class="title_para">
                     Experience unparalleled performance and style with our newest addition, crafted to meet your needs and exceed your expectations.</p>
@@ -256,8 +254,16 @@
     <script src="./js/global.js"></script>
     <script>
         var swiper = new Swiper(".business_slide", {
-          slidesPerView: 4,
-          spaceBetween: 12,
+            breakpoints: {
+            320: {
+            slidesPerView: 1,
+            spaceBetween: 16,
+            },
+            1280: {
+            slidesPerView: 4,
+            spaceBetween: 12,
+            },
+            },
           pagination: {
             el: ".swiper-pagination",
             clickable: true,

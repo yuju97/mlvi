@@ -34,6 +34,9 @@
     margin: auto;
     margin-bottom: 80px;
 }
+.business_slide img{
+    width: 100%;
+}
 .product_intro_section .text_area p{
     color: #424242;
 }
