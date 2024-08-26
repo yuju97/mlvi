@@ -1,3 +1,8 @@
+html, body {
+    margin: 0px;
+    overflow-x: hidden;
+    width: 100%;
+  }
 .cont{
     width: 100vw;
     max-width: 1280px;
@@ -359,5 +364,8 @@ footer p{
     .footer_menu li{
         width: 40%;
         max-width: 330px;
+    }
+    .page_main{
+        height: auto;
     }
 }

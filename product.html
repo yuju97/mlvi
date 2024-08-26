@@ -84,12 +84,12 @@
                 </div>
             </div>
         </div>
-        <ul class="category_list">
+        <!-- <ul class="category_list">
             <li class="category all on">ALL</li>
             <li class="category encoder">Encoder</li>
             <li class="category lvdsz">LVDS Zoom Module</li>
             <li class="category ipz">IP Zoom Module</li>
-        </ul>
+        </ul> -->
     </section>
     <section class="product_intro_section">
         <div class="cont">
@@ -202,13 +202,21 @@
     <script src="./js/global.js"></script>
     <script>
         var swiper = new Swiper(".product_slide", {
-          slidesPerView: 4,
-          spaceBetween: 12,
           pagination: {
             el: ".swiper-pagination",
             clickable: true,
           },
           loop: true,
+          breakpoints: {
+            320: {
+            slidesPerView: 1,
+            spaceBetween: 16,
+            },
+            1280: {
+            slidesPerView: 4,
+            spaceBetween: 12,
+            },
+        },
         });
       </script>
 </body>
