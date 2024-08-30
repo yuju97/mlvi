@@ -108,6 +108,13 @@ a#scroll_btn:after {
   gap: 12px;
   margin: 32px 0 64px;
 }
+.product_list li{
+  width: calc(100% - 24px);
+}
+.product_list a img{
+  width: 100%;
+  padding: 10%;
+}
 #product_section .btn{
   margin: auto;
 }

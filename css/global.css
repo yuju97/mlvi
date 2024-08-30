@@ -262,6 +262,14 @@ footer p{
 .post_para{
     color: #424242;
     margin-top: 4px;
+    width: 100%;
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1.4;
+    margin-top: 12px;
 }
 .dim{
     background-color: #000000;
@@ -274,6 +282,18 @@ footer p{
 }
 .hamburger{
     display: none;
+}
+.btn a{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.btn:hover a,
+.btn:hover a span{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #fff;
 }
 @media all and (max-width: 1280px){
     section{

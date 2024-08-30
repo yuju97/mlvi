@@ -40,8 +40,10 @@
 .product_intro_section .text_area p{
     color: #424242;
 }
+
 .product_intro_section .swiper .swiper-slide img{
     width: 100%;
+    padding: 10%;
 }
 .product_intro_section .swiper .swiper-pagination{
     position: static;
