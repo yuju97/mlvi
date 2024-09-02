@@ -21,6 +21,7 @@ a#scroll_btn{
     left: 50%;
     bottom: 100px;
     transform: translateX(-50%);
+    z-index: 10;
 }
 
 a#scroll_btn:before {
