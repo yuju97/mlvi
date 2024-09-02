@@ -179,7 +179,9 @@ section{
 .title_para{
     font-size: 34px;
     color: #fff;
-    line-height: 1.6;
+    line-height: 1.4;
+    font-weight: 600;
+    margin-top: 24px;
 }
 .small_title{
     color: #fff;
@@ -189,7 +191,7 @@ section{
 .small_title_para{
     color: #fff;
     font-size: 20px;
-    line-height: 1.6;
+    line-height: 1.4;
     margin-bottom: 20px;
 }
 
@@ -278,7 +280,7 @@ footer p{
     position: absolute;
     opacity: 0.2;
     top: 0;
-    z-index: 1;
+    z-index: 2;
 }
 .hamburger{
     display: none;

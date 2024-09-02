@@ -1,6 +1,5 @@
 #intro_section{
     height: 100vh;
-    background: url(../img/mian_bg.jpg) center/cover no-repeat;
     position: relative;
 }
 #intro_section .cont{
@@ -9,7 +8,9 @@
     align-items: center;
 }
 #intro_section .text_area{
-    width: 40%;
+    width: 60%;
+    position: relative;
+    z-index: 10;
 }
 a#scroll_btn{
     position: absolute;
@@ -34,6 +35,15 @@ a#scroll_btn:before {
     background-color: #ffffff;
     border-radius: 2px;
     animation: move_down 1.5s infinite;
+}
+.bg_video{
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 @keyframes move_down {
   0% {
