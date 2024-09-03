@@ -35,16 +35,23 @@
     width: 528px;
     overflow: hidden;
     order:3;
+    display: flex;
+    justify-content: center;
 }
 .vision_section .img_area{
     height: 600px;
     width: 528px;
     overflow: hidden;
+    display: flex;
+    align-items: center;
 }
-.about_section img,
-.vision_section img{
+.about_section img{
     width: auto;
     height: 100%;
+}
+.vision_section img{
+    width: 100%;
+    height: auto;
 }
 .vision_section .cont{
     display: flex;

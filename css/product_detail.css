@@ -6,6 +6,10 @@
     background: url(../img/product_2_bg.jpg) center/cover no-repeat;
     padding: 500px 0 60px;
 }
+.product_3_bg{
+    background: url(../img/product_3_bg.jpg) center/cover no-repeat;
+    padding: 500px 0 60px;
+}
 .product_bg{
     height: 100vh;
 }

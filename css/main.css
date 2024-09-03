@@ -68,38 +68,23 @@ a#scroll_btn:after {
   transform: translateX(-50%);
 }
 #service_section{
-  background-color: #000;
+  background:url(../img/service_bg.jpg) center/cover no-repeat;
   height: 900px;
   display: flex;
   align-items: center;
 }
 #service_section .cont{
-  display: grid;
+  display: flex;
   height: 100%;
   padding: 80px 0;
-  gap: 0 100px;
+  justify-content: right;
 }
-#service_section .img_area{
-  grid-column: 1 / 2;
-  grid-row: 1 / 4;
-}
-#service_section .img_area img{
-  height: 100%;
-}
-#service_section .small_title{
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-  align-self: end;
-}
-#service_section .small_title_para{
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-  margin: 0;
-}
-#service_section .btn {
-  grid-column: 2 / 3;
-  grid-row: 3 / 4;
-  width: 186px;
+#service_section .text_area{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
 }
 #product_section .cont{
   display: flex;
@@ -137,15 +122,26 @@ a#scroll_btn:after {
 #customer_section .cont{
   display: flex;
   gap: 120px;
+  height: 100%;
 }
 #customer_section .img_area{
   order: 1;
+  width: 55%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+#customer_section .img_area img{
+  width: auto;
+  height: 100%;
 }
 #customer_section .text_area{
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: center;
+  width: 40%;
 }
 #started_section{
   background: url(../img/started_bg.jpg) center/cover no-repeat;
@@ -158,7 +154,7 @@ a#scroll_btn:after {
   gap: 24px;
 }
 #started_section .text_area{
-  width: 528px;
+  width: 600px;
 }
 #started_section .text_area .title_para{
   font-size: 24px;
