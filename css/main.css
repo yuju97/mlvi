@@ -173,6 +173,9 @@ a#scroll_btn:after {
     height: 100%;
     padding-top: 100px;
   }
+    #intro_section .title_para{
+    font-size: 20px;
+  }
   #service_section{
     height: auto;
   }
@@ -209,6 +212,9 @@ a#scroll_btn:after {
     margin: 0 auto;
     order: 4;
   }
+    #service_section .text_area{
+        width: 100%
+    }
   #product_section .text_area{
     flex: 1 1 5%;
   }
@@ -257,6 +263,7 @@ a#scroll_btn:after {
     justify-content: center;
     order: 2;
     padding: 0 16px 80px;
+      width:100%;
   }
   #customer_section .btn{
     margin: auto;
