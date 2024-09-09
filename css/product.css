@@ -47,17 +47,47 @@
 }
 .product_intro_section .swiper .swiper-pagination{
     position: static;
-    margin-top: 80px;
+    width: auto;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #131313;
 }
-.product_intro_section .swiper-pagination-bullet.swiper-pagination-bullet-active{
+.swiper-controls {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.swiper-button span{
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+    color: #fff;
+}
+.pagi-control{
+    display: flex;
+    width: auto;
+    justify-content: end;
+    align-self: center;
+    margin-top: 40px;
+    gap: 12px;
+}
+.pagi-control button{
+    border: none;
+    width: 40px;
+    height: 40px;
     background-color: #0057FF;
+    border-radius: 5px;
 }
-.product_intro_section .swiper-pagination-bullet{
-    background-color: #D9D9D9;
-    opacity: 1;
+.pagi-control button:hover{
+    background-color: #0008D0;
 }
-
-
 @media all and (max-width: 1280px){
     .product_main .text_area{
         margin-top: 160px;
