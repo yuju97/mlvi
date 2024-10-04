@@ -177,9 +177,9 @@ margin-bottom: 12px;
   height: 100%;
   padding-top: 100px;
 }
-#intro_section .text_area .title_para{
+  #intro_section .title_para{
   font-size: 20px;
-  margin-top:60px;
+  margin-top: 40px;
 }
 #service_section{
   height: auto;
