@@ -8,7 +8,6 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="./css/import.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -16,7 +15,7 @@
         <div class="cont">
             <h1 class="logo">
                 <a href="./index.html">
-                    <img src="./img/mlvi_logo.svg" alt="mlvis logo">
+                    <img src="./img/mlvi_logo.svg" alt="mlvi logo">
                 </a>
             </h1>
             <ul class="nav">
@@ -50,22 +49,43 @@
             </div>
         </div>
     </header>
-    <section class="page_main product_main" style="padding: 0 0 33px 0;">
-        <div class="product_main_img">
-            <div class="cont">
-                <div class="text_area">
-                    <h3 class="title">
-                        Product
-                    </h3>
-                    <p class="title_para ">
-                        Experience unparalleled performance and style with our newest addition, crafted to meet your
-                        needs and exceed your expectations.
-                    </p>
-                </div>
+    <section id="intro_section">
+
+        <div class="cont">
+            <div class="text_area">
+                <h3 class="title">
+                    Hi. We’re<br>MLVi
+                </h3>
+                <p class="title_para">
+                    We are committed to delivering innovative vision solutions that are designed to meet the unique challenges of our customers and partners. Specializing in Machine Vision, Intelligent Traffic Systems, Pipe Inspection, Drone Vision, and Robot Vision, our technologies are built with customization in mind, ensuring precise, efficient, and forward-thinking solutions that align perfectly with the evolving needs of various industries.
+                </p>
+            </div>
+            <a id="scroll_btn"></a>
+        </div>
+        <div class="dim"></div>
+        <video class="bg_video" autoplay muted loop playsinline>
+            <source src="./img/index.mov" type="video/mp4" />
+        </video>
+    </section>
+    <section id="service_section">
+        <div class="cont">
+            <div class="text_area">
+                <h3 class="small_title">
+                    Achieve greater precision.
+                </h3>
+                <p class="small_title_para">
+                    Our team of AI-driven vision experts, engineers, and consultants is dedicated to helping you unlock new
+                    possibilities or achieve greater precision. We collaborate with you to design, develop, and optimize
+                    advanced vision systems and solutions. This empowers you to enhance efficiency, drive innovation, and
+                    scale your operations with confidence.
+                </p>
+                <button class="btn btn_black_bg" onclick="location.href = './contact.html' ">
+                    Let's Get Started
+                </button>
             </div>
         </div>
     </section>
-    <section class="product_intro_section">
+    <section id="product_section">
         <div class="cont">
             <div class="text_area">
                 <h3 class="small_title black_color">
@@ -76,44 +96,74 @@
                     and exceed your expectations.
                 </p>
             </div>
-            <div class="swiper product_slide">
-                <div class="pagi-control">
-                    <div class="swiper-controls">
-                        <button id="swiper-play-pause" class="swiper-button">
-                            <span class="material-symbols-outlined">
-                                pause
-                            </span>
-                        </button>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <a href="./contact.html">
-                            <img src="./img/encorder-1.png" alt="Front photo of encoder standing diagonally">
-                            <!-- <p class="class">Encorder</p> -->
-                            <h4 class="post_title">Encorder</h4>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="./contact.html">
-                            <img src="./img/30x_zoom-1.png" alt="30x zoom module placed diagonally in front and taken from above">
-                            <!-- <p class="class">IP ZOOM Module</p> -->
-                            <h4 class="post_title">IP ZOOM Module</h4>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="./contact.html">
-                            <img src="./img/10x_zoom-1.png" alt="10x zoom module placed diagonally in front and taken from above">
-                            <!-- <p class="class">LVDS ZOOM Module</p> -->
-                            <h4 class="post_title">LVDS ZOOM Module</h4>
-                        </a>
-                    </div>
-                    
-                </div>
-                
+            <ul class="product_list">
+                <li>
+                    <a href="./ME-330.html">
+                        <img src="./img/encorder-1.png" alt="Front photo of encoder standing diagonally">
+                        <p class="class">Encorder</p>
+                        <h4 class="post_title">ME-330</h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="./SZ-G30.html">
+                        <img src="./img/30x_zoom-1.png" alt="30x zoom module placed diagonally in front and taken from above">
+                        <p class="class">IP ZOOM Module</p>
+                        <h4 class="post_title">SZ-G30</h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="./LZ-R10.html">
+                        <img src="./img/10x_zoom-1.png" alt="10x zoom module placed diagonally in front and taken from above">
+                        <p class="class">LVDS ZOOM Module</p>
+                        <h4 class="post_title">LZ-R10</h4>
+                    </a>
+                </li>
+            </ul>
+            <button class="btn btn_white_bg" onclick="location.href = './product.html' ">View All</button>
+        </div>
+    </section>
+    <section id="customer_section">
+        <div class="cont">
+            <div class="img_area">
+                <img src="./img/customer_bg.jpg" alt="A man in a dress shirt standing with his finger pointing while holding a cell phone">
+            </div>
+            <div class="text_area">
+                <h4 class="title_class">Class</h4>
+                <h3 class="small_title">
+                    Empower Your Vision
+                </h3>
+                <p class="small_title_para">
+                    At MLVi, we believe in the power of technology to transform the way you do business. Our AI-driven
+                    vision solutions are crafted to deliver unmatched precision, efficiency, and reliability, empowering
+                    you to stay ahead in a competitive market. From enhancing your current systems to creating entirely
+                    new capabilities, we work closely with you to design and implement solutions that meet your unique
+                    needs.
+                    <br><br>
+                    By partnering with us, you gain access to a team of experts dedicated to helping you innovate and
+                    grow. Whether you aim to optimize performance, increase scalability, or drive new revenue streams,
+                    our advanced technology is the key to unlocking your business’s full potential. Together, we can
+                    create the future of your industry.
+                    <br><br>
+                    Explore how our solutions can revolutionize your business and help you achieve greater success.
+                </p>
+                <button class="btn btn_black_bg">
+                    Find out more
+                </button>
             </div>
         </div>
+    </section>
+    <section id="started_section">
+        <div class="text_area">
+            <h3 class="title">
+                Let’s get started.
+            </h3>
+            <p class="title_para">
+                Ready to elevate your business? Let's begin your journey to advanced solutions and success.
+            </p>
+        </div>
+        <button class="btn btn_black_bg" onclick="location.href = './contact.html' ">
+            Get in touch
+        </button>
     </section>
     <footer>
         <div class="cont">
@@ -136,44 +186,7 @@
             </p>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/global.js"></script>
-    <script>
-        var swiper = new Swiper(".product_slide", {
-            pagination: {
-                el: ".swiper-pagination",
-                type: "fraction",
-            },
-
-            breakpoints: {
-                320: {
-                    slidesPerView: 1,
-                    spaceBetween: 16,
-                },
-                1280: {
-                    slidesPerView: 4,
-                    spaceBetween: 12,
-                },
-            },
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
-        });
-        var playPauseButton = document.getElementById("swiper-play-pause");
-        var isPlaying = true;
-
-        playPauseButton.addEventListener("click", function () {
-            if (isPlaying) {
-                swiper.autoplay.stop();
-                playPauseButton.innerHTML = '<span class="material-symbols-outlined">play_arrow</span>';
-            } else {
-                swiper.autoplay.start();
-                playPauseButton.innerHTML = '<span class="material-symbols-outlined">pause</span>';
-            }
-            isPlaying = !isPlaying;
-        });
-    </script>
 </body>
 
 </html>
