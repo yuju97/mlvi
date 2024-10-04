@@ -380,7 +380,4 @@ footer p{
     .page_main{
         height: auto;
     }
-    .nav_menu:last-of-type{
-        display: none;
-    }
 }
