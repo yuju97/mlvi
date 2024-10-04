@@ -71,7 +71,7 @@
     color: #fff;
 }
 .pagi-control{
-    display: flex;
+    display: none;
     width: auto;
     justify-content: end;
     align-self: center;
@@ -121,5 +121,6 @@
     }
     .pagi-control {
         margin-right: 10px;
+        display: flex;
     }
   }
